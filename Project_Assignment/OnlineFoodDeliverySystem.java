@@ -70,6 +70,5 @@ public class OnlineFoodDeliverySystem {
         System.out.println("Customer created: "+ customer.getCustomerName());
 
         System.out.println("Mobile Number: "+ customer.getMobileNumber());
-
     }
 }
