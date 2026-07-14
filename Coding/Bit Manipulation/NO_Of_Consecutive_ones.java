@@ -23,12 +23,18 @@ public class NO_Of_Consecutive_ones{
 
         //Bit Manipulation
         int count = 0;
-
         while (n != 0) {
             n = n & (n << 1);
             count++;
         }
-
         System.out.println(count);
     }
 }
+/*
+    n & (n-1) returns 0 if it n contains only one set bit(1) or in the power of 2
+
+    0001 ==> 2^0
+    0010 ==> 2^1
+    0100 ==> 2^2
+    1000 ==> 2^3
+*/
