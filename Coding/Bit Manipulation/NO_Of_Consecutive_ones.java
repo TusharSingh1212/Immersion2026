@@ -21,13 +21,14 @@ public class NO_Of_Consecutive_ones{
         System.out.println(max);
         */
 
-        //Bit Manipulation
-        int count = 0;
-        while (n != 0) {
-            n = n & (n << 1);
-            count++;
+            //Bit Manipulation
+            int count = 0;
+            while (n != 0) {
+                n = n & (n << 1);
+                count++;
+            }
+            System.out.println(count);
         }
-        System.out.println(count);
     }
 }
 /*
@@ -38,3 +39,12 @@ public class NO_Of_Consecutive_ones{
     0100 ==> 2^2
     1000 ==> 2^3
 */
+
+
+/*
+sdigit(n){
+    if(n<=9){
+        return n;
+    }
+    return n%10+ sdigit(n/10)
+} */
